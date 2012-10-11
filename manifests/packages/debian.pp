@@ -1,7 +1,7 @@
 class rvm::packages::debian {
   $package_list = ['build-essential', 'curl', 'bash', 'gawk', 'sed', 'grep',
                    'gzip', 'bzip2', 'zlib1g-dev', 'libssl-dev', 
-                   'libreadline5-dev', 'libxslt1-dev', 'libxml2-dev']
+                   'libreadline5-dev', 'libxslt1-dev', 'libxml2-dev', 'libyaml-dev']
                    
   # Virtualize Package list to prevent conflicts
   @package { $package_list:
