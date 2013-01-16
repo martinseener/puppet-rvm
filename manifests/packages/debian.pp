@@ -19,11 +19,11 @@ class rvm::packages::debian {
   if ! defined(Package['libyaml-dev'])      { package { 'libyaml-dev': ensure => installed } }
   if ! defined(Package['libsqlite3-dev'])   { package { 'libsqlite3-dev': ensure => installed } }
   if ! defined(Package['sqlite3'])          { package { 'sqlite3': ensure => installed } }
-  if ! defined(Package['libxslt-dev'])      { package { 'libxslt-dev': ensure => installed } }
+  if ! defined(Package['libxslt1-dev'])     { package { 'libxslt1-dev': ensure => installed } }
   if ! defined(Package['libxml2-dev'])      { package { 'libxml2-dev': ensure => installed } }
   if ! defined(Package['autoconf'])         { package { 'autoconf': ensure => installed } }
   if ! defined(Package['libc6-dev'])        { package { 'libc6-dev': ensure => installed } }
-  if ! defined(Package['ncurses-dev'])      { package { 'ncurses-dev': ensure => installed } }
+  if ! defined(Package['libncurses5-dev'])  { package { 'libncurses5-dev': ensure => installed } }
   if ! defined(Package['automake'])         { package { 'automake': ensure => installed } }
   if ! defined(Package['libtool'])          { package { 'libtool': ensure => installed } }
   if ! defined(Package['bison'])            { package { 'bison': ensure => installed } }
