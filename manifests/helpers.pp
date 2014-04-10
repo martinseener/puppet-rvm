@@ -5,7 +5,7 @@ class rvm::helpers {
   }
 
   exec { 'upgrade-rvm':
-    command     => '/usr/local/rvm/bin/rvm update ; /usr/local/rvm/bin/rvm reload',
+    command     => '/usr/local/rvm/bin/rvm get stable ; /usr/local/rvm/bin/rvm reload',
     refreshonly => 'true',
   }
 }
