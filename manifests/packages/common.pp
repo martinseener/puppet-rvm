@@ -9,9 +9,10 @@ class rvm::packages::common {
     unless  => 'which rvm',
   }
   # install-rvm command enhanced to use a specific rvm version
-  # chosen 1.25.22 which is latest stable on Mar 26, 2014 and recommended for server usage
+  # 1.25.22 at Mar, 26, 2014 and recommended for server usage
+  # 1.26.9 at 08.01.2015
   exec { 'install-rvm':
-    command => "bash /tmp/rvm --version 1.25.22",
+    command => "bash /tmp/rvm --version 1.26.9",
     creates => '/usr/local/rvm/bin/rvm',
     require => Exec['download-rvm-install'],
   }
