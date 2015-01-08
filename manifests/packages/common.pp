@@ -13,7 +13,7 @@ class rvm::packages::common {
   # 1.26.9 at 08.01.2015
   exec { 'get-rvm-key':
     command => "curl -sSL https://rvm.io/mpapis.asc | gpg --import -",
-    requires => Exec['download-rvm-install'],
+    require => Exec['download-rvm-install'],
   }
 
   exec { 'install-rvm':
